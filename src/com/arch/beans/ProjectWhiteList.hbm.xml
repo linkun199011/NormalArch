@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.arch.beans">
+	<class name="ProjectWhiteList" table="proj_white_list">
+		<id name="projectId" type="java.lang.String" column="project_id" />
+	</class>
+</hibernate-mapping>

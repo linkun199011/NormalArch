@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+body {
+    margin: 0 auto;
+	font: Arial, Helvetica, sans-serif, "ËÎÌו";
+	font-size: 12px;
+	text-align: center;
+	background: url(../images/bg.png) no-repeat;
+	background-size: 100%;
+}
+
+#title{
+	
+	font-size:45px;
+	color: green;
+	text-align: center;
+}
+
+#box {
+    margin:auto;
+	margin-top:300px;
+    width: 522px;
+	height: 310px;
+	text-align:center;
+}
+
+#usernameLabel{
+	
+	font-size:50px;
+	
+}
+
+#box #login {
+    padding: 160px 0px 0px 120px;
+    height:100px;
+}
+#box #login .input {
+    height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+} 
+#box #login .input span {
+    display: block;
+	float: left;
+	clear: left;
+	width: 50px;
+}
+#box #login .input input {
+   
+    width: 190px;
+}
+#box #login #submit {
+    text-align:left;
+	margin-top:5px;
+}
+#box #login #submit input {
+    border: 0;
+	width: 92px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+    background: url(../images/bt.gif) no-repeat ;
+	overflow: hidden;
+	
+}

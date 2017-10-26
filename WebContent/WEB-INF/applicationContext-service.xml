@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!--业务逻辑类 -->
+	<bean id="sysArchManager" class="com.arch.serviceImpl.SysArchManagerImpl">
+		<property name="manageAppCoopDao">
+			<ref bean="manageAppCoopDao" />
+		</property>
+	</bean>
+	
+	<bean id="showAppRel" class="com.arch.serviceImpl.ShowAppRelImpl">
+		<property name="showAppRelDao">
+			<ref bean="showAppRelDao" />
+		</property>
+	</bean>
+	
+	<bean id="showSysRel" class="com.arch.serviceImpl.ShowSysRelImpl">
+		<property name="showSysRelDao">
+			<ref bean="showSysRelDao" />
+		</property>
+	</bean>
+	
+	<bean id="userManager" class="com.arch.serviceImpl.UserManagerImpl">
+		<property name="manageUserDao">
+			<ref bean="manageUserDao" />
+		</property>
+	</bean>
+
+</beans>

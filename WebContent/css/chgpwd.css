@@ -1,0 +1,85 @@
+body{margin:0px auto;background-color:#edf4fc;}
+.main{height:385px;width:100%;margin:0px auto;border-right:1px solid #99bbe8;border-left:1px solid #99bbe8;}
+.img1{height:25px;width:100%;background:url(../images/bg.jpg) repeat-x;}
+.img2{background-color:#edf4fc;height:360px;width:100%;border-bottom:1px solid #99bbe8;padding:0px 10px;}
+.field0{font-size:12px;color:#143978;border:1px solid #99bbe8; font-weight:bold; margin-top:10px;}
+.field1{height:140px;}
+.field2{height:150px;}
+.datalist{margin-top:16px;}
+.datalist tr td{height:25px; padding-left:15px;}
+
+.textfield {background:url(../images/input_bg.jpg) repeat-x;width:150px;height:20px;border:1px solid #b5bdc4;}
+.select{
+	width: 155px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+
+.bt{height:25px;width:75px;background:url(../images/bt.gif) no-repeat;border:none;text-align:center;}
+.operate2 a:link,.operate2 a:visited{ color:#15428b;text-decoration:underline;}
+.operate2 a:hover{ color:red;}
+.btn3_mouseout {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:30px;
+width:85px;
+}
+
+.btn3_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:30px;
+width:85px;
+}
+
+.btn3_mousedown {
+BORDER-RIGHT: #FFE400 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #FFE400 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #FFE400 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #FFE400 1px solid;
+height:30px;
+width:85px;
+}
+
+.btn3_mouseup {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:30px;
+width:85px;
+}
+

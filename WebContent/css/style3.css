@@ -1,0 +1,101 @@
+.clsPart {
+	BEHAVIOR: url(js/webparts.htc); WIDTH: 180px
+}
+.clsPartHead {
+	FONT-SIZE: 82%; CURSOR: move; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica; BACKGROUND-COLOR: #ba474a;
+}
+.clsPartRight {
+	FONT-SIZE: 82%; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica; BACKGROUND-COLOR: #ba474a;
+}
+
+.clsPartContainer {	WIDTH: 170px; POSITION: relative}
+
+.storeUserData {
+	BEHAVIOR: url(#default#userData)
+}
+.clscontent {  border-color: #ba474a; border-style: solid; border-width: 1px}
+body {
+	font-size: 12px;
+}
+.title {font-family: simsun; font-size: 14.8px; color: #1451AD; line-height: 20px; text-decoration: none; font-weight: bold;}
+
+.button {height: 20px; padding: 2px; border-width: 1px;
+font-size: 12px; background-color: #d7d7cf}
+.inputbox {height: 20px; padding: 2px; border-width: 1px;
+font-size: 12px; }
+
+.btnfont {font-size:12px;filter:DropShadow(color=white,offX=1,offY=1);width:76;padding-bottom:1px;}
+.btnfont1 {font-size:12px;filter:DropShadow(color=white,offX=1,offY=1);width:150;padding-bottom:1px;}
+.btn1 {font:12px;
+	background-image: url(../images/btn_bg01.gif);
+	border-width:0px;
+	height: 19px;
+	width: 76px;
+	cursor: default;
+}
+
+.btn11 {font:12px;
+	background-image: url(../images/btn_bg03.gif);
+	border-width:0px;
+	height: 21px;
+	width: 150px;
+	cursor: default;
+}
+
+.btn01 {font:12px;
+	background-image: url(../images/btn_bg01.gif);
+	border-width:0px;
+	height: 19px;
+	width: 76px;
+	cursor: default;
+}
+.btn02 {font:12px;
+	background-image: url(../images/btn_bg02.gif);
+	border-width:0px;
+	height: 21px;
+	width: 100px;
+	cursor: default;
+}
+.btn2 {font:12px;
+	background-image: url(../images/btn_bg02.gif);
+	border-width:0px;
+	height: 21px;
+	width: 100px;
+	cursor: default;
+}
+.form1 {  background-color: #ffffff}
+.indent {  font-size: 12px; text-indent: 4px}
+.scroll {overflow: auto; height: 160px; width: 300px; clip:    rect(   ); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px}
+.condition {  height: 150px; width: 140px; overflow: auto; clip:   rect(   ); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; background-color: #EEF2F5}
+
+a.hlinks:link { height: 20px; padding-top: 4px; text-decoration: none; color: #000000; font-size: 12px; }
+a.hlinks:visited { height: 20px; padding-top: 4px; text-decoration: none; color: #000000; font-size: 12px; }
+a.hlinks:hover { height: 20px; padding-top: 4px; text-decoration: none; color: #cf6f00; font-size: 12px; }
+
+.ptext {  font-size: 12px}
+.border {  border: #cfcfcf; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+body {
+	font-size: 12px;
+}
+.skcolor {
+	color: #1166ff;
+}
+.skcolor0 {
+	color: 0066ff;
+}
+.querytitlec {font-family: simsun; font-size: 14.8px; color: #1166ff; line-height: 20px; text-decoration: none; font-weight: bold;}
+.leftbcolor {
+	background-color: #666666;
+	color: #ffffff;
+	bordercolor: #0066ff;
+}
+.sktitlecolor {font-family: simsun; font-size: 14.8px; color: #1451AD; line-height: 20px; text-decoration: none; font-weight: bold;}
+.rightbcolor {
+	background-color: #cccccc;
+}
+.skdowncolor {
+	background-color: #CCCCCC;
+}
+.skhelpsbgcolor{
+	background-color: #D1E5F5;
+}

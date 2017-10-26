@@ -1,0 +1,179 @@
+body{margin:0px auto;}
+.main{height:100%;width:800px;margin:0px auto;border-right:1px solid #99bbe8;border-left:1px solid #99bbe8;}
+.img1{height:25px;width:100%;background:url(../images/bg.jpg) repeat-x;}
+.img2{background-color:#e0e9f8;height:100%;width:780px;border-bottom:1px solid #99bbe8;padding:0px 10px;}
+.field0{font-size:12px;color:#143978;border:1px solid #99bbe8;font-weight:bold; margin-top:10px;}
+.field1{height:auto;padding-bottom:5px;}
+.field2{height:auto;padding-bottom:5px;}
+.datalist{margin-top:3px;}
+.datalist tr td{height:25px;padding-left:5px;padding-top:5px;}
+.datalist1{ border:1px solid #96afd5;border-collapse:collapse;font-size:12px;color:#143978;font-weight:bold;margin-top:5px;background-color:#fff;}
+.datalist1 tr th{border:1px solid #96afd5;border-collapse:collapse;height:25px;background:url(../images/bg2.jpg) repeat-x;}
+.datalist1 tr td{border:1px solid #96afd5;}
+.datalist1 tr.altrow{background-color:#c4e4ff;}  /*定义 鼠标悬停在当前行，增加的当前行背景色(下面用js调用的)*/  
+.operate a:link,.operate a:visited{color:#15428b;text-decoration:underline;}
+.operate a:hover{color:#15428b;}
+.operate2 a:link,.operate2 a:visited{color:#15428b;text-decoration:underline;}
+.operate2 a:hover{color:red;}
+.textfield {background:url(../images/input_bg.jpg) repeat-x;width:100px;height:20px;border:1px solid #b5bdc4;}
+.textfield1{background:url(../images/input_bg.jpg) repeat-x;width:150px;height:20px;border:1px solid #b5bdc4;}
+.textfield2{background:url(../images/input_bg.jpg) repeat-x;width:100px;height:20px;border:1px solid #b5bdc4;}
+
+.select{
+	width: 100px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+.selectMu{
+	width: 200px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+.bt{height:25px;width:75px;background:url(../images/bt.gif) no-repeat;border:none;text-align:center;}
+.bt2{height:10px;width:60px;background:url(../images/bt.gif) no-repeat;border:none;text-align:center;}
+.operate2 a:link,.operate2 a:visited{ color:#15428b;text-decoration:underline;}
+.operate2 a:hover{color:red;}
+.textarea1{
+	width: 140px;
+	height: 110px;
+	color: #00008B;
+	background-color: #fff;
+	border:1px solid #99bbe8;
+}
+.textarea2{
+	width: 610px;
+	height: 110px;
+	color: #00008B;
+	background-color: #fff;
+	border:1px solid #99bbe8;
+}
+.btn3_mouseout {                        /*按钮样式*/
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:25px;
+width:90px;
+}
+
+.btn3_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:25px;
+width:90px;
+}
+
+.btn3_mousedown {
+BORDER-RIGHT: #FFE400 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #FFE400 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #FFE400 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #FFE400 1px solid;
+height:25px;
+width:90px;
+}
+
+.btn3_mouseup {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:25px;
+width:90px;
+}
+
+.btn4_mouseout {                        /*按钮样式*/
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:20px;
+width:45px;
+}
+
+.btn4_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:20px;
+width:45px;
+}
+
+.btn4_mousedown {
+BORDER-RIGHT: #FFE400 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #FFE400 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #FFE400 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #FFE400 1px solid;
+height:20px;
+width:45px;
+}
+
+.btn4_mouseup {
+BORDER-RIGHT: #2C59AA 1px solid;
+PADDING-RIGHT: 2px;
+BORDER-TOP: #2C59AA 1px solid;
+PADDING-LEFT: 2px;
+FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+BORDER-LEFT: #2C59AA 1px solid;
+CURSOR: hand;
+COLOR: black;
+PADDING-TOP: 2px;
+BORDER-BOTTOM: #2C59AA 1px solid;
+height:20px;
+width:45px;
+}
+

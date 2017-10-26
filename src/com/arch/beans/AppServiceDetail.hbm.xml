@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.arch.beans">
+	<class name="AppServiceDetail" table="app_service_detail">
+		<id name="appServiceDetailId" type="java.lang.Integer" column="app_service_detail_id" />
+		<property name="appServiceId" column="app_service_id" type="java.lang.Integer"/>				
+		<property name="stepCode" column="step_code" type="java.lang.Integer" />		
+		<property name="stepDesc" column="step_desc" type="java.lang.String"  />	
+		<property name="calledAppId" column="called_app_id" type="java.lang.Integer" />	
+		<property name="calledAppIntf" column="called_app_intf" type="java.lang.String"/>	
+	</class>
+</hibernate-mapping>

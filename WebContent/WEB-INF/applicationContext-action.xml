@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 应用协作管理管理Action -->
+	<bean id="appCoopAction" class="com.arch.action.AppCoopAction" scope="prototype">
+		<property name="sysArchManager">
+			<ref bean="sysArchManager"/>
+		</property>
+	</bean>
+
+	<!-- 应用间关联关系展示的Action -->
+	<bean id="showAppRelAction" class="com.arch.action.ShowAppRelAction" scope="prototype">
+		<property name="showAppRel">
+			<ref bean="showAppRel"/>
+		</property>
+	</bean>
+	
+	
+	<!-- 系统关系展示的Action -->
+	<bean id="showSysRelAction" class="com.arch.action.ShowSysRelAction" scope="prototype">
+		<property name="showSysRel">
+			<ref bean="showSysRel"/>
+		</property>
+	</bean>
+	
+	<!-- 用户登陆Action -->
+	<bean id="userAction" class="com.arch.action.UserAction" scope="prototype">
+		<property name="userManager">
+			<ref bean="userManager"/>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.arch.beans">
+	<class name="AppServiceTmp" table="app_service_tmp">
+		<id name="appServiceId" type="java.lang.Integer" column="app_service_id" />
+		<property name="pubAppServiceId" column="pub_app_service_id" type="java.lang.Integer"/>	
+		<property name="appId" column="app_id" type="java.lang.Integer"/>		
+		<property name="serviceTypeId" column="service_type_id" type="java.lang.Integer" />		
+		<property name="serviceCode" column="service_code" type="java.lang.String"  />	
+		<property name="appInnerCode" column="app_inner_code" type="java.lang.String" />	
+		<property name="serviceName" column="service_name" type="java.lang.String"/>		
+		<property name="serviceDesc" column="service_desc" type="java.lang.String" />
+		<property name="receiveFile" column="receive_file" type="java.lang.String"  />		
+		<property name="getbackFile" column="getback_file" type="java.lang.String" />
+		<property name="projectId" column="project_id" type="java.lang.String" />
+		<property name="submitDate" column="submit_date" type="java.lang.String" />
+		<property name="confirmDate" column="confirm_date" type="java.lang.String" />
+		<property name="modifyUserId" column="modify_user_id" type="java.lang.String" />
+		<property name="modifyUserName" column="modify_user_name" type="java.lang.String" />
+		<property name="operationType" column="operation_type" type="java.lang.String" />
+		<property name="flowStatus" column="flow_status" type="java.lang.String" />
+		<property name="modifyDesc" column="modify_desc" type="java.lang.String" />
+		
+	</class>
+</hibernate-mapping>

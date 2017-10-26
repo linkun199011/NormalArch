@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx.xsd"
+           >
+	
+	<!-- 事务的通知 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+       	
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED" isolation="DEFAULT" />
+            <tx:method name="delete*" propagation="REQUIRED" isolation="DEFAULT" />
+            <tx:method name="update*" propagation="REQUIRED" isolation="DEFAULT" />
+            <tx:method name="get*" propagation="REQUIRED" isolation="DEFAULT" />
+            <tx:method name="list*" propagation="REQUIRED" isolation="DEFAULT" />
+            <tx:method name="*" propagation="REQUIRED" isolation="DEFAULT" />
+        </tx:attributes>
+    </tx:advice>
+    
+	<!-- 切面配置 -->
+    <aop:config>
+        <aop:pointcut expression="execution(* com.arch.serviceImpl.*.*(..))"
+            id="serviceAOP" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceAOP" /> 
+    </aop:config> 
+       
+</beans>

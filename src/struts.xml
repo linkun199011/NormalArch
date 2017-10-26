@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<package name="default" extends="struts-default">
+
+		<!-- 定义用户管理的项目方法映射 -->
+		<action name="user*" class="userAction" method="{1}">
+			<result name="input" type="redirect">/login.jsp</result>
+			<result name="loginFail">/login.jsp</result>
+			<result name="loginSuccess" type="redirect">/index.jsp</result> 
+			<result name="responseSuccess">/userResponse.jsp</result>
+			<result name="responseFail">/userResponse.jsp</result>
+		</action>
+
+		<!-- 定义应用间协作的相关管理方法映射 -->
+		<action name="*AppCoop" class="appCoopAction" method="{1}">
+			<result name="update">/updateAppCoop.jsp</result>
+			<result name="input">/manageAppCoop.jsp</result>
+			<result name="edit">/manageAppCoop.jsp</result>
+			<result name="fail">/updateAppCoop.jsp</result>
+			<result name="success">/updateAppCoop.jsp</result>
+			<result name="view">/viewAppCoop.jsp</result>
+			<result name="depCheck">/depCheck.jsp</result>
+			<result name="up" type="redirectAction">/upShowServRel.action</result>
+			<result name="down" type="redirectAction">/downShowServRel.action</result>
+		</action>
+
+		<action name="initAppCoopAction" class="appCoopAction" method="init"></action>
+		<action name="initUserAction" class="userAction" method="init"></action>
+
+		<!-- 定义查询所有应用间协作的方法映射 -->
+		<action name="queryServRel" class="appCoopAction" method="query">
+			<result name="input">/showServRel.jsp</result>
+		</action>
+
+		<action name="initServRel" class="showAppRelAction" method="init">
+			<result name="input">/showServRel.jsp</result>
+		</action>
+		
+		<action name="checkForQA" class="appCoopAction" method="checkForQA">
+			<result name="QA">/QACheck.jsp</result>
+		</action>
+		
+		<action name="updateProjectWhiteList" class="appCoopAction" method="updateProjectWhiteList">
+			<result name="QA">/QACheck.jsp</result>
+		</action>
+		
+		<action name="removeFromProjectWhiteList" class="appCoopAction" method="removeFromProjectWhiteList">
+			<result name="QA">/QACheck.jsp</result>
+		</action>
+		
+
+		<!-- 定义 -->
+		<action name="*ShowServRel" class="showAppRelAction" method="{1}">
+			<result name="down">/drawServRel.jsp</result>
+			<result name="up">/listUpServRel.jsp</result>
+			<result name="query" type="redirectAction">/queryServRel.action</result>
+		</action>
+
+		<!-- -->
+		<action name="showUpServRel" class="showAppRelAction" method="showUp">
+			<result name="showUp">/drawServRel.jsp</result>
+		</action>
+
+		<action name="*SysRel" class="showSysRelAction" method="{1}">
+			<result name="input">/showSysRel.jsp</result>
+			<result name="draw">/drawSysRel.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

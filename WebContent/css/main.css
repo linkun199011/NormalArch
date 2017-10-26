@@ -1,0 +1,115 @@
+body {font-family: "宋体", Arial, Helvetica, sans-serif;font-size: 12px;color: #000000;}
+/*system init stylesheet*/
+#loading-mask{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:20000;
+	background-color:white;
+}
+#loading{
+	position:absolute;
+	left:45%;
+	top:40%;
+	padding:2px;
+	z-index:20001;
+	height:auto;
+}
+#loading .loading-indicator{
+	background:white;
+	color:#444;
+	font:bold 13px tahoma,arial,helvetica;
+	padding:10px;
+	margin:0;
+	height:auto;
+}
+#loading-msg {
+	font: normal 10px arial,tahoma,sans-serif;
+}
+/*main top*/
+#topFrame{ height:69px; width:100%; background-image:url(../images/main/main_top_BG.gif); background-repeat:repeat-x}
+#mainLogoIconPanel{ height:69px; width:245px; background-image:url(../images/main/main_logoIcon.gif); background-repeat:no-repeat}
+#mainTopContentPanel{ margin:27px 10px 10px 0px;}
+#mainTopContentPanel div{ color:#FFFFFF;}
+#mainTopContentPanel a{color:#FFFFFF;text-decoration:none}
+#mainTopContentPanel a:hover {color:#00CCFF;text-decoration: underline;}
+#mainTopContentPanel .nameColor{ font-weight:bold; color:#00FF00}
+#currentTimePanel{ padding:3px 0px 0px 0px }
+
+
+/*menu*/
+.table-reload{
+	background-image: url(../images/table_refresh.png) !important;
+}
+.tree-reload{
+	background-image: url(../images/reload.png) !important;
+}
+.tree-expand {
+	background-image: url(../images/expand-all.gif) !important;
+}
+.tree-collapse {
+	background-image: url(../images/collapse-all.gif) !important;
+}
+.settings {
+    background-image:url( ../images/folder_wrench.png ) !important;
+}
+.nav {
+    background-image:url( ../images/folder_go.png ) !important;
+}
+.fun {
+    background-image:url( ../images/base.gif ) !important;
+}
+.home {
+    background-image:url( ../images/home.png ) !important;
+}
+.new {
+    background-image:url( ../images/form.png ) !important;
+}
+.grid {
+	background-image:url(../images/grid.png) !important;
+}
+.grid-save {
+	background-image:url(../images/save.gif) !important;
+}
+.grid-delete {
+	background-image:url(../images/delete.gif) !important;
+}
+.grid-add {
+	background-image:url(../images/add.gif) !important;
+}
+.grid-update{
+	background-image:url(../images/edit.gif) !important;
+}
+.grid-refresh {
+	background-image:url(../images/refresh.gif) !important;
+}
+.lock{
+	background-image:url(../images/lock.gif) !important;
+}
+.unlock{
+	background-image:url(../images/unlock.gif) !important;
+}
+.add{
+	background-image:url(../images/add.gif) !important;
+}
+/*start Ext.tree check*/
+#ums-tree .x-panel-body {
+    background-color:white;
+    position:relative;
+    padding:3px;
+}
+#ums-tree .x-tree-selected {
+    border:1px dotted #a3bae9;
+    background:#DFE8F6;
+}
+#ums-tree .x-tree-node .x-tree-selected a span{
+	background:transparent;
+	color:#1E4176;
+    font-weight:bold;
+}
+/*end*/
+/*#ms-tree a:hover span {
+    text-decoration:underline;
+}*/

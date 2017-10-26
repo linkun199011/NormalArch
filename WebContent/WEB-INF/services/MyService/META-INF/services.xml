@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="SyncSysInfoService">
+		<description>同步系统信息</description>
+		<!-- 通过ServiceObjectSupplier参数指定SpringServletContextObjectSupplier类 来获得Spring的ApplicationContext对象 -->
+		<!-- 此处需要配置接口，这样才可以支持事务 -->
+		<parameter name="ServiceClass">com.arch.webservice.SyncSysInfoService
+		</parameter>
+		<parameter name="ServiceObjectSupplier">
+			org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+		<!-- SpringBeanName这个属性名是固定的不能改,TixoneBaseInfoBean是spring中注册的实现类的id（这个大家肯定很清楚了） -->
+		<parameter name="SpringBeanName">SyncSysInfoService</parameter>
+		<!-- 在这里最值得注意的是<messageReceivers>元素，该元素用于设置处理WebService方法的处理器。 例如，getGreeting方法有一个返回值，因此，需要使用可处理输入输出的RPCMessageReceiver类， 
+			而update方法没有返回值，因此，需要使用只能处理输入的RPCInOnlyMessageReceiver类。 -->
+		<!-- 操作级别 
+		<operation name="sayHello">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+		-->
+
+		<!-- 服务级 -->
+		<messageReceivers> 
+			<messageReceiver mep= "http://www.w3.org/2004/08/wsdl/in-only" 
+				class = "org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" /> 
+			<messageReceiver mep= "http://www.w3.org/2004/08/wsdl/in-out"
+				 class = "org.apache.axis2.rpc.receivers.RPCMessageReceiver" /> 
+		</messageReceivers> 
+	</service>
+
+	<!-- <service name="LifeHelpService"> <description>生活助手</description> <parameter 
+		name="ServiceClass">com.service.LifeHelpService</parameter> <parameter name="ServiceObjectSupplier"> 
+		org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier 
+		</parameter> <parameter name="SpringBeanName">LifeHelpService</parameter> 
+		<messageReceivers> <messageReceiver mep= "http://www.w3.org/2004/08/wsdl/in-only" 
+		class = "org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" /> <messageReceiver 
+		mep= "http://www.w3.org/2004/08/wsdl/in-out" class = "org.apache.axis2.rpc.receivers.RPCMessageReceiver" 
+		/> </messageReceivers> </service> -->
+
+</serviceGroup>

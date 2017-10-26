@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.arch.beans">
+	<class name="DicAppServiceType" table="dic_app_service_type">
+		<id name="serviceTypeId" type="java.lang.Integer" column="service_type_id" />
+		<property name="serviceTypeName" column="service_type_name" type="java.lang.String"/>		
+		<property name="serviceTypeDesc" column="service_type_desc" type="java.lang.String" />		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.arch.beans">
+	<class name="AppBaseInfo" table="app_base_info">
+		<id name="appId" type="java.lang.Integer" column="app_id" />
+		<property name="appName" column="app_name" type="java.lang.String"/>		
+		<property name="appShortName" column="app_short_name" type="java.lang.String"/>		
+		<property name="appCode" column="app_code" type="java.lang.String"/>		
+		<property name="systemLevel" column="system_level" type="java.lang.String"/>		
+		<property name="publishDate" column="publish_date" type="java.lang.String" />
+		<property name="isInternetApp" column="IS_INTERNET_APP" type="java.lang.String" />
+		<property name="securityLevel" column="SECURITY_LEVEL" type="java.lang.String" />
+		<property name="serviceTime" column="SERVICE_TIME" type="java.lang.String" />
+		<property name="devMode" column="dev_mode" type="java.lang.String" />
+		<property name="isTrust" column="is_trust" type="java.lang.String" />
+		<property name="ownMode" column="own_mode" type="java.lang.String" />
+		<property name="devUser" column="dev_user" type="java.lang.String" />		
+		<property name="devDept" column="dev_dept" type="java.lang.String"/>	
+		<property name="isFjnxApp" column="is_fjnx_app" type="java.lang.String"/>
+		<property name="company" column="company" type="java.lang.String"/>
+		<property name="desc" column="desc" type="java.lang.String" />
+		<property name="RPO" column="RPO" type="java.lang.String" />
+		<property name="RTO" column="RTO" type="java.lang.String" />
+		<property name="operationMode" column="operation_mode" type="java.lang.String" />
+		<property name="recoverLevel" column="recover_level" type="java.lang.String" />
+		<property name="level1" column="level1" type="java.lang.String" />
+		<property name="level2" column="level2" type="java.lang.String" />		
+		<property name="serviceLevel" column="service_level" type="java.lang.String"/>		
+
+	</class>
+</hibernate-mapping>
